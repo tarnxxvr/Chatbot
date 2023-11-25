@@ -9,7 +9,7 @@ function Calling() {
 	};
 	// Using the hook
 	const {data, error, isLoading} = useQuery('randomFacts', getFacts,{
-		refetchInterval: 3000,
+		refetchInterval: 10000,
 	});
 	// Error and Loading states
 	if (error) return <div>Request Failed</div>;
